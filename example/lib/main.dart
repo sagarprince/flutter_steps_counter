@@ -19,10 +19,18 @@ class _MyAppState extends State<MyApp> {
     setUpPedometer();
   }
 
-  void setUpPedometer() {
-    FlutterStepsCounter pedometer = new FlutterStepsCounter();
-    _subscription = pedometer.stepCountStream.listen(_onData,
-        onError: _onError, onDone: _onDone, cancelOnError: true);
+  void setUpPedometer() async {
+    FlutterStepsCounter stepsCounter = new FlutterStepsCounter();
+
+    bool isSensorPresent = await FlutterStepsCounter.isSensorPresent;
+
+    if (isSensorPresent) {
+      _subscription = stepsCounter.stepCountStream.listen(_onData,
+          onError: _onError, onDone: _onDone, cancelOnError: true);
+    } else {
+      print(isSensorPresent);
+      print('Sensor not exist');
+    }
   }
 
   void _onData(int stepCountValue) async {
