@@ -3,24 +3,23 @@ import 'dart:async';
 import 'package:flutter/services.dart';
 
 class FlutterStepsCounter {
-  static const MethodChannel _methodchannel =
-  const MethodChannel('pedometer.methodChannel');
+  static const MethodChannel _methodChannel =
+  const MethodChannel('steps.methodChannel');
 
   static const EventChannel _eventChannel =
-  const EventChannel("pedometer.eventChannel");
+  const EventChannel("steps.eventChannel");
 
-  Stream<int> _pedometerStream;
+  Stream<int> _stream;
 
   static Future<bool> get isSensorPresent async {
-    return await _methodchannel.invokeMethod('isSensorPresent');
+    return await _methodChannel.invokeMethod('isSensorPresent');
   }
 
   Stream<int> get stepCountStream {
-    if (_pedometerStream == null) {
-      _pedometerStream =
-          _eventChannel.receiveBroadcastStream().map((stepCount) => stepCount);
+    if (_stream == null) {
+      _stream = _eventChannel.receiveBroadcastStream().map((stepsCount) => stepsCount);
     }
-    return _pedometerStream;
+    return _stream;
   }
 
 }

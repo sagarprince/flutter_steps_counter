@@ -37,9 +37,9 @@ class _MyAppState extends State<MyApp> {
     setState(() => _stepCountValue = "$stepCountValue");
   }
 
-  void _onDone() => print("Finished pedometer tracking");
+  void _onDone() => print("Finished Steps Counter Tracking");
 
-  void _onError(error) => print("Flutter Pedometer Error: $error");
+  void _onError(error) => print("Flutter Steps Counter Error: $error");
 
   void _onCancel() => _subscription.cancel();
 
