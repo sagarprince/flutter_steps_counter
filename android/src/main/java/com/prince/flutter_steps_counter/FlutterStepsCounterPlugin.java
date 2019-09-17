@@ -49,7 +49,7 @@ public class FlutterStepsCounterPlugin implements EventChannel.StreamHandler, St
     if (sensor != null) {
       sensorEventListener = createSensorEventListener(events);
       stepDetector = new StepDetector(this);
-      sensorManager.registerListener(sensorEventListener, sensor, sensorManager.SENSOR_DELAY_NORMAL);
+      sensorManager.registerListener(sensorEventListener, sensor, sensorManager.SENSOR_DELAY_GAME);
     }
   }
 

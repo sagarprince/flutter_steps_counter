@@ -10,8 +10,8 @@ import java.math.BigDecimal;
  * Email: i@ikaze.uu.me
  */
 public class StepDetector {
-    private final int DELAY = 100;
-    private float MAX_VEL = 14f;
+    private final int DELAY = 200;
+    private float MAX_VEL = 16f;
     private float MIN_VEL = 7f;
     private float init_vel = 1.1f;
 
@@ -139,7 +139,6 @@ public class StepDetector {
         pos=0;
         for (int i = 0; i < 4; i++)
             velocities[i] = init_vel;
-
     }
 
     public void initStepDetector() {
@@ -156,7 +155,6 @@ public class StepDetector {
             model = WAIT_MODEL;
         tempSteps = 0;
         initCount = 0;
-
     }
 
     public void updateVEL_THRESHOLD(float vel) {
