@@ -5,7 +5,7 @@
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     FLTPedometerStreamHandler* streamHandler = [[FLTPedometerStreamHandler alloc] init];
     FlutterEventChannel* eventChannel =
-    [FlutterEventChannel eventChannelWithName:@"pedometer.eventChannel"
+    [FlutterEventChannel eventChannelWithName:@"steps.eventChannel"
                               binaryMessenger:[registrar messenger]];
     [eventChannel setStreamHandler:streamHandler];
 }

@@ -22,15 +22,8 @@ class _MyAppState extends State<MyApp> {
   void setUpPedometer() async {
     FlutterStepsCounter stepsCounter = new FlutterStepsCounter();
 
-    bool isSensorPresent = await FlutterStepsCounter.isSensorPresent;
-
-    if (isSensorPresent) {
-      _subscription = stepsCounter.stepCountStream.listen(_onData,
-          onError: _onError, onDone: _onDone, cancelOnError: true);
-    } else {
-      print(isSensorPresent);
-      print('Sensor not exist');
-    }
+    _subscription = stepsCounter.stepCountStream.listen(_onData,
+        onError: _onError, onDone: _onDone, cancelOnError: true);
   }
 
   void _onData(int stepCountValue) async {

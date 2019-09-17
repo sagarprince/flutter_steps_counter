@@ -7,21 +7,13 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 //import android.util.Log;
 
-import io.flutter.plugin.common.MethodCall;
-import io.flutter.plugin.common.MethodChannel;
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
-import io.flutter.plugin.common.MethodChannel.Result;
-
 import io.flutter.plugin.common.EventChannel;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 /**
  * SensorsPlugin
  */
-public class FlutterStepsCounterPlugin implements MethodCallHandler, EventChannel.StreamHandler, StepListener {
-
-  private static final String STEP_COUNT_METHOD_CHANNEL_NAME =
-          "steps.methodChannel";
+public class FlutterStepsCounterPlugin implements EventChannel.StreamHandler, StepListener {
 
   private static final String STEP_COUNT_EVENT_CHANNEL_NAME =
           "steps.eventChannel";
@@ -32,9 +24,6 @@ public class FlutterStepsCounterPlugin implements MethodCallHandler, EventChanne
    * Plugin registration.
    */
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), STEP_COUNT_METHOD_CHANNEL_NAME);
-    channel.setMethodCallHandler(new FlutterStepsCounterPlugin(registrar.context()));
-
     final EventChannel eventChannel =
             new EventChannel(registrar.messenger(), STEP_COUNT_EVENT_CHANNEL_NAME);
     eventChannel.setStreamHandler(
@@ -53,19 +42,6 @@ public class FlutterStepsCounterPlugin implements MethodCallHandler, EventChanne
   private FlutterStepsCounterPlugin(Context context) {
     sensorManager = (SensorManager) context.getSystemService(context.SENSOR_SERVICE);
     sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-  }
-
-  @Override
-  public void onMethodCall(MethodCall call, Result result) {
-    if (call.method.equals("isSensorPresent")) {
-      if (sensor != null) {
-        result.success(true);
-      } else {
-        result.success(false);
-      }
-    } else {
-      result.notImplemented();
-    }
   }
 
   @Override
