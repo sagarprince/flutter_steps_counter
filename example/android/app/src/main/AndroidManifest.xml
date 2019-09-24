@@ -32,5 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <service
+            android:name="com.prince.flutter_steps_counter.StepService"
+            android:label="StepService">
+        </service>
     </application>
 </manifest>

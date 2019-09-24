@@ -22,6 +22,8 @@ class _MyAppState extends State<MyApp> {
   void setUpPedometer() async {
     FlutterStepsCounter stepsCounter = new FlutterStepsCounter();
 
+    FlutterStepsCounter.setStepsDetails(new StepDetails("IN MORNING", "105"));
+
     _subscription = stepsCounter.stepCountStream.listen(_onData,
         onError: _onError, onDone: _onDone, cancelOnError: true);
   }
