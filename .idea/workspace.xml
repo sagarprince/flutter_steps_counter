@@ -11,15 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c0f63d6-bc48-45f0-9e16-dbbb42500d95" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/android/src/main/java/com/prince/flutter_steps_counter/StepService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/app_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/prince/flutter_steps_counter/FlutterStepsCounterPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/prince/flutter_steps_counter/FlutterStepsCounterPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/java/com/prince/flutter_steps_counter_example/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/java/com/prince/flutter_steps_counter_example/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_steps_counter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_steps_counter.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/prince/flutter_steps_counter/StepService.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/prince/flutter_steps_counter/StepService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -113,6 +105,62 @@
             <path>
               <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_steps_counter" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flutter_steps_counter_example" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_steps_counter" type="b2602c69:ProjectViewProjectNode" />
@@ -239,9 +287,9 @@
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2770936" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32881773" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32881773" />
       <window_info id="Captures" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
@@ -258,16 +306,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/flutter_steps_counter.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -603,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="72" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ios/Classes/FlutterStepsCounterPlugin.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -638,6 +669,23 @@
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/java/com/prince/flutter_steps_counter_example/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="37" selection-end-column="18" />
         </state>
       </provider>
     </entry>

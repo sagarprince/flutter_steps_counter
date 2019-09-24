@@ -68,16 +68,9 @@ public class StepService extends Service {
                 .setVibrate(new long[]{0})
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
-        Intent notificationIntent = new Intent(this, getMainActivityClass(this));
-        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        stackBuilder.addParentStack(getMainActivityClass(this));
-        stackBuilder.addNextIntent(notificationIntent);
-        PendingIntent resultPendingIntent =
-                stackBuilder.getPendingIntent(
-                        0,
-                        PendingIntent.FLAG_UPDATE_CURRENT
-                );
-        builder.setContentIntent(resultPendingIntent);
+        Intent intent = new Intent(this, getMainActivityClass(this));
+        PendingIntent pendingIntent = PendingIntent.getActivity(this, NOTIFICATION_ID, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(pendingIntent);
 
         startForeground(NOTIFICATION_ID, builder.build());
     }
