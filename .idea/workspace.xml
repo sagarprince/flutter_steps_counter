@@ -285,9 +285,9 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2770936" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2770936" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32881773" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32881773" />
       <window_info id="Captures" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24958402" />
       <window_info anchor="right" id="Theme Preview" order="3" />

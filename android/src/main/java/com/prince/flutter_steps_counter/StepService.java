@@ -60,10 +60,6 @@ public class StepService extends Service {
     public void createNotification(String title, String content) {
         createNotificationChannel();
 
-        Intent intent = new Intent(this, getMainActivityClass(this));
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
-
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(resourceId)
                 .setContentTitle(content)
@@ -71,8 +67,7 @@ public class StepService extends Service {
                 .setStyle(new NotificationCompat.BigTextStyle().setSummaryText(content))
                 .setSound(null)
                 .setVibrate(new long[]{0})
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setContentIntent(pendingIntent);
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
         startForeground(NOTIFICATION_ID, builder.build());
     }
