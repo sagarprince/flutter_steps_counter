@@ -8,6 +8,11 @@
     [FlutterEventChannel eventChannelWithName:@"steps.eventChannel"
                               binaryMessenger:[registrar messenger]];
     [eventChannel setStreamHandler:streamHandler];
+
+    FlutterMethodChannel* channel =
+          [FlutterMethodChannel methodChannelWithName:@"steps.methodChannel"
+                                      binaryMessenger:[registrar messenger]];
+    [registrar addMethodCallDelegate:streamHandler channel:channel];
 }
 
 @end
@@ -44,6 +49,14 @@ void _initPedometerManager() {
 - (FlutterError*)onCancelWithArguments:(id)arguments {
     [_pedometer stopPedometerUpdates];
     return nil;
+}
+
+- (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
+  if ([@"setStepsDetails" isEqualToString:call.method]) {
+    result(@"false");
+  } else {
+    result(FlutterMethodNotImplemented);
+  }
 }
 
 @end
